@@ -10,7 +10,18 @@ Necesario cambiar la **partición** de SLURM a usar
 #SBATCH --partition=ib
 ```
 
+Este repositorio propone la siguiente estructura de directorios y archivos:
 
+```
+├── data
+│   ├── raw
+│   └── trimmed
+├── logs
+├── metadata
+├── README.md
+├── results
+└── scripts
+```
 
 ## Descarga de datos
 
