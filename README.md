@@ -13,6 +13,7 @@ Necesario cambiar la **partición** de SLURM a usar
 Este repositorio propone la siguiente estructura de directorios y archivos:
 
 ```
+clean-data
 ├── data
 │   ├── raw
 │   └── trimmed
@@ -26,3 +27,15 @@ Este repositorio propone la siguiente estructura de directorios y archivos:
 ## Descarga de datos
 
 Para descargar datos haremos uso de fasterq-dump. Existen alternativas (ie. **fastq-dump,** **parallel-fasterq-dump**), sin embargo, el software que usaremos es rápido y además distribuido por NCBI, cuenta con soporte constante.
+
+Se ejecuta de la siguiente manera:
+
+```Shell
+sbatch scripts/1-fasterq-dump.sh
+```
+
+Puedes ajustar en caso de correr en otro servidor con distintas particiones
+
+```Shell
+sbatch --partition=bioinfo scripts/1-fasterq-dump.sh
+```
