@@ -1,4 +1,4 @@
-# SRA y curaciónd de datos
+# SRA y curación de datos
 
 En este repositorio encontrarán distintos scripts que les permitirán descargar datos de la base de datos Sequence Read Archive (SRA) así como los subsecuenes pasos de control de calidad, limpieza y trimming de de datos genómicos.
 
