@@ -11,4 +11,7 @@ Necesario cambiar la **partición** de SLURM a usar
 ```
 
 
-## * Descarga de datos
+
+## Descarga de datos
+
+Para descargar datos haremos uso de fasterq-dump. Existen alternativas (ie. **fastq-dump,** **parallel-fasterq-dump**), sin embargo, el software que usaremos es rápido y además distribuido por NCBI, cuenta con soporte constante.
