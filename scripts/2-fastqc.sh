@@ -23,3 +23,4 @@ apptainer exec $CONTAINER \
     fastqc ${READS}/*.fastq.gz \
     --outdir ${OUTDIR}/ \
     --threads $SLURM_CPUS_PER_TASK
+    
