@@ -12,7 +12,7 @@
 cd $SLURM_SUBMIT_DIR
 
 # Definir variable
-CONTAINER="/home/ib/dcruz/bioinfo/sra/sra-tools_3.4.1.sif"
+CONTAINER="docker://ncbi/sra-tools"
 
 OUTDIR="data/raw"
 
