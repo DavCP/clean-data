@@ -11,7 +11,7 @@
 # Definir variable
 CONTAINER="docker://quay.io/biocontainers/fastp:1.3.6--h43da1c4_0"
 
-INPUT="data/raw-reads"
+INPUT="data/raw"
 OUTDIR="data/trim-reads"
 REPORT="results/fastp"
 
