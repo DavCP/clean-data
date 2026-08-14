@@ -40,9 +40,7 @@ Puedes ajustar en caso de correr en otro servidor con distintas particiones
 sbatch --partition=bioinfo scripts/1-fasterq-dump.sh
 ```
 
-Tras la descarga, los datos se encontrarán en el directorio 
-
-> data/raw/
+Tras la descarga, los datos se encontrarán en el directorio `data/raw/`
 
 ## Limpieza de datos con fastp o trimmomatic
 
