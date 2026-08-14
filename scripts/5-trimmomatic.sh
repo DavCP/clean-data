@@ -8,6 +8,7 @@
 #SBATCH --mem=2G
 #SBATCH --time=01:00:00
 
+cd $SLURM_SUBMIT_DIR
 # Definir variable
 CONTAINER="docker://quay.io/biocontainers/trimmomatic:0.41--hdfd78af_0"
 
