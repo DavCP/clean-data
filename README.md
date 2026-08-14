@@ -42,6 +42,25 @@ sbatch --partition=bioinfo scripts/1-fasterq-dump.sh
 
 Tras la descarga, los datos se encontrarán en el directorio `data/raw/`
 
+
 ## Limpieza de datos con fastp o trimmomatic
 
-Ambos software son útiles para la curación de datos genómicos (i.e. filtro de lecturas por calidad y remoción de adaptadores).
+Ambos software son útiles para la curación de datos genómicos (i.e. filtro de lecturas por calidad y remoción de adaptadores). fastp suele tener más soporte y es considerablemente más rápido. Se pueden ejecutar de la siguiente manera:
+
+#### fastp
+
+```Shell
+sbatch scripts/2-fastp.sh
+```
+
+#### trimmomatic
+
+```Shell
+sbatch scripts/2-trimmomatic.sh
+```
+
+Los datos resultantes de la curación de lecturas se encontrarán en `data/trim-reads/` y `data/trimmomatic-reads/`, para fastp y trimmomatic respectivamente. Para más detalles respecto a los resultados de trimmomatic, puedes revisar los archivos de salir y error `.err, .out` en el directorio `logs/`. Por otro lado, fastp genera archivos .html y .json detallando el procesamiento que pueden ser consultados en el directorio `results/fastp`.
+
+## Control de calidad FastQC
+
+
