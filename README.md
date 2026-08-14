@@ -10,17 +10,21 @@ Necesario cambiar la **partición** de SLURM a usar
 #SBATCH --partition=ib
 ```
 
-Este repositorio propone la siguiente estructura de directorios y archivos:
+Este repositorio propone la siguiente estructura de directorios y archivos una vez completado el procesamiento:
 
 ```
 clean-data
 ├── data
-│   ├── raw
-│   └── trimmed
+│   ├── raw 
+│   ├── trimmomatic-reads
+│   └── trim-reads
 ├── logs
 ├── metadata
-├── README.md
+│   ├── list.txt
 ├── results
+│   ├── fastp
+│   ├── fastqc-out
+│   └── multiqc-out
 └── scripts
 ```
 
