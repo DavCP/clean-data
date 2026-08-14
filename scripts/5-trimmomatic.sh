@@ -25,4 +25,4 @@ while read ID; do
    ${OUTDIR}/trim-${ID}_1_paired.fastq.gz ${OUTDIR}/trim-${ID}_1_unpaired.fastq.gz \
    ${OUTDIR}/trim-${ID}_2_paired.fastq.gz ${OUTDIR}/trim-${ID}_2_unpaired.fastq.gz \
    ILLUMINACLIP:TruSeq3-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
-done < list.txt 
+done < metadata/list.txt 
