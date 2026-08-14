@@ -1,4 +1,4 @@
-# SRA y curación de datos
+# SRA: descarga y curación de datos públicos
 
 En este repositorio encontrarán distintos scripts que les permitirán descargar datos de la base de datos Sequence Read Archive (SRA) así como los subsecuenes pasos de control de calidad, limpieza y trimming de de datos genómicos.
 
@@ -42,7 +42,6 @@ sbatch --partition=bioinfo scripts/1-fasterq-dump.sh
 
 Tras la descarga, los datos se encontrarán en el directorio `data/raw/`
 
-
 ## Limpieza de datos con fastp o trimmomatic
 
 Ambos software son útiles para la curación de datos genómicos (i.e. filtro de lecturas por calidad y remoción de adaptadores). fastp suele tener más soporte y es considerablemente más rápido. Se pueden ejecutar de la siguiente manera:
@@ -80,10 +79,3 @@ sbatch scripts/4-multiqc.sh
 ```
 
 Los resultados de MultiQC pueden ser consultados en el directorio `results/multiqc-out/`. El reporte legible en un navegador web se encuentra en el archivo `multiqc_report.html`.
-
-
-
-
-
-
-
