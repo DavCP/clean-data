@@ -39,3 +39,8 @@ Puedes ajustar en caso de correr en otro servidor con distintas particiones
 ```Shell
 sbatch --partition=bioinfo scripts/1-fasterq-dump.sh
 ```
+
+
+## Limpieza de datos con fastp o trimmomatic
+
+Ambos software son útiles para la curación de datos genómicos (i.e. filtro de lecturas por calidad y remoción de adaptadores).

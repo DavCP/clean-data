@@ -11,7 +11,7 @@
 # Definir variable
 CONTAINER="docker://quay.io/biocontainers/trimmomatic:0.41--hdfd78af_0"
 
-INPUT="data/raw-reads"
+INPUT="data/raw"
 OUTDIR="data/trimmomatic-reads"
 
 # Crear directior de datos de salida
