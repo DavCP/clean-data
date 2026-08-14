@@ -1,6 +1,6 @@
 # SRA: descarga y curación de datos públicos
 
-En este repositorio encontrarán distintos scripts que les permitirán descargar datos de la base de datos Sequence Read Archive (SRA) así como los subsecuenes pasos de control de calidad, limpieza y trimming de de datos genómicos.
+En este repositorio encontrarán distintos scripts que les permitirán descargar datos de la base de datos Sequence Read Archive (SRA) así como los subsecuentes pasos de control de calidad, limpieza y trimming de datos genómicos.
 
 Los scripts se encuentran adaptados para funcionar con servidores administrados con SLURM. Para ello, hagan los ajustes necesarios en los scripts previo a someter Jobs.
 
@@ -30,7 +30,7 @@ clean-data
 
 ## Descarga de datos
 
-Para descargar datos haremos uso de fasterq-dump. Existen alternativas (ie. **fastq-dump,** **parallel-fasterq-dump**), sin embargo, el software que usaremos es rápido y además distribuido por NCBI, cuenta con soporte constante. El script comprimirá los archivos `.fastq` descargados con `pigz`, resultando en archivos de lecturas con la extensión `.fastq.gz`.
+Para descargar datos haremos uso de fasterq-dump. Existen alternativas (e.g. **fastq-dump,** **parallel-fasterq-dump**), sin embargo, el software que usaremos es rápido y además distribuido por NCBI, cuenta con soporte constante. El script comprimirá los archivos `.fastq` descargados con `pigz`, resultando en archivos de lecturas con la extensión `.fastq.gz`.
 
 Se ejecuta de la siguiente manera:
 
@@ -66,13 +66,13 @@ Los datos resultantes de la curación de lecturas se encontrarán en `data/trim-
 
 ## Control de calidad FastQC
 
-FastQC hace un detallado control de calidad a partir de archivos de lecturas, tanto en su versión de texto plano, como archivos comprimidos (`.fastq` o `.fastq.gz`). El script, buscará dentro del directorio `data/` todos aquellos archivos con la terminación `.fastq.gz`
+FastQC realiza un detallado control de calidad a partir de archivos de lecturas, tanto en su versión de texto plano, como archivos comprimidos (`.fastq` o `.fastq.gz`). El script, buscará dentro del directorio `data/` todos aquellos archivos con la terminación `.fastq.gz`
 
 ```Shell
 sbatch scripts/3-fastqc.sh
 ```
 
-Los resultados de FastQC pueden ser consultados en `results/fastq-out/`. Por cada muestra analizada se generará un archivo con extensión `.zip` y `.html`, el archivo legible y a revisar será este último en cualquier navegador web.
+Los resultados de FastQC pueden ser consultados en `results/fastqc-out/`. Por cada muestra analizada se generará un archivo con extensión `.zip` y `.html`, el archivo legible y a revisar será este último en cualquier navegador web.
 
 ## Reporte de calidad con MultiQC
 
