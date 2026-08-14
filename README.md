@@ -50,13 +50,13 @@ Tras la descarga, los datos se encontrarán en el directorio `data/raw/`
 
 Ambos software son útiles para la curación de datos genómicos (i.e. filtro de lecturas por calidad y remoción de adaptadores). fastp suele tener más soporte y es considerablemente más rápido. Se pueden ejecutar de la siguiente manera:
 
-#### fastp
+- **fastp**
 
 ```Shell
 sbatch scripts/2-fastp.sh
 ```
 
-#### trimmomatic
+- **trimmomatic**
 
 ```Shell
 sbatch scripts/2-trimmomatic.sh
