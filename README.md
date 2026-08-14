@@ -69,7 +69,7 @@ FastQC hace un detallado control de calidad a partir de archivos de lecturas, ta
 sbatch scripts/3-fastqc.sh
 ```
 
-Los resultados de FastQC pueden ser consultados en `results/fastq-out/`. Por cada muestra analizada se generará un archivo con extensión .zip y .html, el archivo legible y a revisar será este último.
+Los resultados de FastQC pueden ser consultados en `results/fastq-out/`. Por cada muestra analizada se generará un archivo con extensión .zip y .html, el archivo legible y a revisar será este último en cualquier navegador web.
 
 ## Reporte de calidad con MultiQC
 
@@ -78,6 +78,11 @@ MultiQC generará un reporte con gráficos interactivos a partir de múltiples r
 ```Shell
 sbatch scripts/4-multiqc.sh
 ```
+
+Los resultados de MultiQC pueden ser consultados en el directorio `results/multiqc-out/`. El reporte legible en un navegador web se encuentra en el archivo `multiqc_report.html`.
+
+
+
 
 
 
