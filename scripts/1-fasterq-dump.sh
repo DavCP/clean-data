@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=fasterq-dump
-#SBATCH --partition=ib
+#SBATCH --partition=ripley
 #SBATCH --output=logs/%x_%j.out
 #SBATCH --error=logs/%x_%j.err
 #SBATCH --ntasks=1

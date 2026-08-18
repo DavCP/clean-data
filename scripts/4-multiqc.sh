@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=multiqc
-#SBATCH --partition=ib
+#SBATCH --partition=ripley
 #SBATCH --output=logs/%j_%x.out
 #SBATCH --error=logs/%j_%x.err
 #SBATCH --ntasks=1
